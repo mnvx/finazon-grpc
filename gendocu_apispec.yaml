@@ -1,0 +1,19 @@
+spectype: gendocu
+servers:
+  - selector: "*" # the * must be wrapped with ""
+    envs:
+      - name: "finazon" # the first environment is the default one
+        urls:
+          - grpc://latest.finazon.io
+
+securitySchemes:
+  - name: token-auth # <scheme-id>
+    title: Token authentication # <scheme-name>
+    description: # <scheme-description>
+      text: Token based authentication. You can create a personal token in account settings and use it with this method. Personal tokens do not expire.
+    callAuthentication:
+      token:
+        exampleValue: "aaa.bbbbbbb.ccc" # a meaningful token used as a hint for user
+        grpc:
+          meta: "authorization"
+          valuePrefix: "bearer " # including whitespaces, the prefix for each value
