@@ -47,6 +47,22 @@ message FindTickerCryptoResponse {
     repeated TickerCryptoInfo result = 1;
 }
 
+//Forex
+
+message TickerForexInfo {
+    string ticker = 1;
+}
+
+message FindTickersForexRequest {
+    string ticker = 1;
+    int32  page = 2;
+    int32  page_size = 3;
+}
+
+message FindTickerForexResponse {
+    repeated TickerForexInfo result = 1;
+}
+
 /**
  * TickersService provide access to tickers
  */
@@ -56,4 +72,7 @@ service TickersService {
 
     /// This API call returns an array of crypto tickers available at Finazon Data API. This list is updated daily.
     rpc FindTickersCrypto(FindTickersCryptoRequest) returns (FindTickerCryptoResponse) {};
+
+    /// This API call returns an array of forex tickers available at Finazon Data API. This list is updated daily.
+    rpc FindTickersForex(FindTickersForexRequest) returns (FindTickerForexResponse) {};
 }
