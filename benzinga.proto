@@ -15,6 +15,13 @@ message DividentsCalendarRequest {
   int32  page = 5;
   int32  page_size = 6;
   string order = 7;
+  string cqs = 8;
+  string cik = 9;
+  string cusip = 10;
+  string isin = 11;
+  string composite_figi = 12;
+  string share_figi = 13;
+  string lei = 14;
 }
 
 message DividentsCalendarResponse {
@@ -52,6 +59,13 @@ message EarningsCalendarRequest {
   int32  page = 5;
   int32  page_size = 6;
   string order = 7;
+  string cqs = 8;
+  string cik = 9;
+  string cusip = 10;
+  string isin = 11;
+  string composite_figi = 12;
+  string share_figi = 13;
+  string lei = 14;
 }
 
 message EarningsCalendarResponse {
@@ -104,6 +118,13 @@ message NewsRequest {
   int32  page = 5;
   int32  page_size = 6;
   string order = 7;
+  string cqs = 8;
+  string cik = 9;
+  string cusip = 10;
+  string isin = 11;
+  string composite_figi = 12;
+  string share_figi = 13;
+  string lei = 14;
 }
 
 message NewsResponse {

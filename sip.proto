@@ -25,6 +25,13 @@ message SipTradesRequest {
   int32  page = 8;
   int32  page_size = 9;
   string order = 10;
+  string cqs = 11;
+  string cik = 12;
+  string cusip = 13;
+  string isin = 14;
+  string composite_figi = 15;
+  string share_figi = 16;
+  string lei = 17;
 }
 
 message SipTradesResponse {

@@ -9,6 +9,13 @@ message SnapshotRequest {
   string market = 3;
   string mic = 4;
   string country = 5;
+  string cqs = 6;
+  string cik = 7;
+  string cusip = 8;
+  string isin = 9;
+  string composite_figi = 10;
+  string share_figi = 11;
+  string lei = 12;
 }
 
 message SnapshotOhlcv {

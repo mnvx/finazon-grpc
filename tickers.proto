@@ -21,6 +21,13 @@ message FindTickersStocksRequest {
     string mic = 4;
     int32  page = 5;
     int32  page_size = 6;
+    string cqs = 11;
+    string cik = 12;
+    string cusip = 13;
+    string isin = 14;
+    string composite_figi = 15;
+    string share_figi = 16;
+    string lei = 17;
 }
 
 message FindTickerStocksResponse {

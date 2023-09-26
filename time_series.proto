@@ -30,6 +30,13 @@ message TimeSeriesRequest {
     bool prepost = 15;
     string market = 16;
     string dataset = 17;
+    string cqs = 18;
+    string cik = 19;
+    string cusip = 20;
+    string isin = 21;
+    string composite_figi = 22;
+    string share_figi = 23;
+    string lei = 24;
 }
 
 message TimeSeriesResponse {
