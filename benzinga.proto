@@ -1,9 +1,8 @@
 syntax = "proto3";
-option go_package = "gitlab.com/finazon/api/pb";
 
 import "google/protobuf/timestamp.proto";
 
-package pb;
+package finazon;
 
 // DividentsCalendar
 
